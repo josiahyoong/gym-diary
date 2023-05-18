@@ -8,7 +8,7 @@ import {UserContext} from "../../contexts/UserContext";
 
 const TopMenuContainer = () => {
 
-    const username = useContext(UserContext);
+    const {username} = useContext(UserContext);
 
     return <div className="flex justify-between border border-green-500 p-2 absolute w-full top-0">
         <CompanyLogo img={CompanyLogoImage} />
